@@ -273,7 +273,7 @@ button:hover {
     }
 
     .nav-items {
-        display: flex; /* Show by default on mobile */
+        display: none; /* Keep hidden by default on mobile */
         position: static; /* Reset position for mobile */
         background-color: transparent; /* Reset background for mobile */
         border: none; /* Reset border for mobile */
@@ -285,50 +285,121 @@ button:hover {
     }
 
     h1 {
-        font-size: 1.5em; /* Adjusted font size for smaller screens */
+        font-size: 1em; /* Smaller font size for smaller screens */
     }
 
     .main {
-        padding: 10px; /* Adjusted padding for smaller screens */
+        padding: 5px; /* Adjusted padding for smaller screens */
     }
 
     .title-img {
-        width: 100px; /* Smaller width for mobile */
-        height: 100px; /* Smaller height for mobile */
+        width: 60px; /* Smaller width for mobile */
+        height: 60px; /* Smaller height for mobile */
     }
 
     .content {
-        padding: 10px; /* Adjusted padding for smaller screens */
+        padding: 5px; /* Adjusted padding for smaller screens */
     }
 
     a {
-        padding: 8px 16px; /* Adjusted padding for smaller screens */
-        font-size: 0.8em; /* Adjusted font size for smaller screens */
+        padding: 6px 12px; /* Adjusted padding for smaller screens */
+        font-size: 0.7em; /* Adjusted font size for smaller screens */
     }
 
     .icon {
-        font-size: 0.9em; /* Adjusted font size for smaller screens */
-        padding: 8px 12px; /* Adjusted padding for smaller screens */
-        width: 130px; /* Adjusted width for smaller screens */
+        font-size: 0.7em; /* Smaller font size for smaller screens */
+        padding: 6px 10px; /* Adjusted padding for smaller screens */
+        width: 100px; /* Adjusted width for smaller screens */
     }
 
     .nav-item {
-        font-size: 0.9em; /* Adjusted font size for smaller screens */
-        padding: 8px 12px; /* Adjusted padding for smaller screens */
-        width: 130px; /* Adjusted width for smaller screens */
+        font-size: 0.7em; /* Smaller font size for smaller screens */
+        padding: 6px 10px; /* Adjusted padding for smaller screens */
+        width: 100px; /* Adjusted width for smaller screens */
         background-color: white;
     }
 
     .topbuyer {
-        padding: 15px; /* Adjusted padding for smaller screens */
+        padding: 10px; /* Adjusted padding for smaller screens */
     }
 
     .topbuyer ol {
-        padding: 8px; /* Adjusted padding for smaller screens */
+        padding: 6px; /* Adjusted padding for smaller screens */
     }
 
-    .footer .telegram {
-        padding: 8px; /* Adjusted padding for smaller screens */
-        font-size: 0.9em; /* Adjusted font size for smaller screens */
+    .footer, .telegram {
+        padding: 6px; /* Adjusted padding for smaller screens */
+        font-size: 0.7em; /* Smaller font size for smaller screens */
     }
+}
+
+.visit, .telegram {
+    display: inline-block;
+    width: calc(33.33% - 20px); /* Adjust width to fit three items in a row with some margin */
+    margin: 10px; /* Margin for spacing between items */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.visit:hover, .telegram:hover {
+    background-color: gray;
+    color: whitesmoke;
+}
+
+.telegram a {
+    color: white;
+    text-decoration: none;
+}
+
+.telegram {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .visit, .telegram {
+        width: calc(50% - 20px); /* Adjust width to fit two items in a row on smaller screens */
+    }
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: white; /* White text color */
+    padding: 20px; /* Padding for spacing */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Center align text */
+    font-weight: 600; /* Bold text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the element */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer:hover {
+    background-color: gray; /* Change background color on hover */
+    color: whitesmoke; /* Change text color on hover */
+}
+
+.footer a {
+    color: white; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 600; /* Bold text for links */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.footer a:hover {
+    color: lightgray; /* Change link color on hover */
 }

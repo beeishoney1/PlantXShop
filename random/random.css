@@ -27,8 +27,8 @@ body {
 }
 
 .title img {
-    width: 50px; /* Smaller width */
-    height: 50px; /* Smaller height */
+    width: 100px; /* Smaller width */
+    height: 100px; /* Smaller height */
     border-radius: 50%;
     margin-right: 10px; /* Space between image and text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

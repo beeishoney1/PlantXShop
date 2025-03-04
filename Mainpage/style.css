@@ -26,7 +26,7 @@ body {
     width: 100%;
 }
 
-.title img {
+.title-img {
     width: 100px; /* Smaller width */
     height: 100px; /* Smaller height */
     border-radius: 50%;
@@ -92,6 +92,16 @@ body {
     gap: 20px;
 }
 
+
+.main1{
+    width: 200px;
+    transition: all 3s;
+}
+
+.main1:hover{
+    width: 600px;
+}
+
 .content {
     background-color: #444; /* Slightly lighter background */
     padding: 20px;
@@ -110,15 +120,10 @@ body {
     border-radius: 8px;
 }
 
-.onstock{
-    color:rgb(255, 35, 35); /* Bright green text */
-    font-weight: bold;
-}
 .price {
-    color: #171307; /* Bright yellow text */
+    color: #ffcc00; /* Bright yellow text */
     font-size: 1.2em;
     font-weight: bold;
-    text-decoration: underline;
 }
 
 .btn {
@@ -146,18 +151,18 @@ body {
     text-align: center;
     font-weight: 600;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: all  1s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .telegram a {
-    color: #fff ; /* Bright yellow text */
+    color: white; /* Bright yellow text */
     text-decoration: none;
     font-weight: bold;
 }
 
-.telegram:hover{
-    font-style: italic;
+.telegram:hover {
     background-color: #ffcc00; /* Bright yellow background on hover */
+    color: #333; /* Dark text on hover */
 }
 
 .footer {
@@ -171,22 +176,17 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.rdfish1 .content{
-    background: url(./fishrandomimg/blur.jpg);
-    box-shadow: 5px 5px 9px 0px rgba(25, 153, 233, 0.988);
+.mainimg1{
+    background:url(./../Img/blurmain.jpg);
     background-position: center;
-    
+    color: rgba(241, 220, 172, 0.915);
 }
 
 
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .content img {
-        width: 50%; /* Adjust the width as needed */
-        margin-bottom: 10px;
-    }
-
-    .content {
-        margin-bottom: 20px;
+        width: 80%; /* Adjust the width as needed */
     }
     .nav-items {
         display: flex; /* Show by default on mobile */
@@ -199,5 +199,4 @@ body {
         text-align: center; /* Center text */
         box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
-   
 }

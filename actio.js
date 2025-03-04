@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Update the visit count in the HTML
     const visitCountElement = document.getElementById('visitcount');
     if (visitCountElement) {
-        visitCountElement.textContent = visitCount;
+        visitCountElement.tex = visitCount;
         console.log("Visit count updated in HTML");
     } else {
         console.error("Element with ID 'visitcount' not found");

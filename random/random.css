@@ -46,11 +46,14 @@ marquee {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; /* Align to the left */
     margin-bottom: 30px;
-    position: sticky;
+    position: relative; /* Ensure it doesn't overlay the marquee */
 }
 
+.marquee {
+    margin-bottom: 20px; /* Add margin to avoid overlay */
+}
 .title-img {
 
     width: 100px; /* Smaller width */
@@ -315,11 +318,27 @@ span{
     font-style: bold;
 }
 /* Media Queries for Responsive Design */
+
+/* Media Queries for Responsive Design */
+
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        gap: 10px;
-        align-items: center; /* Center align for mobile */
+        display: flex;
+        justify-content: space-between; /* Distribute space between title and menu */
+        align-items: center;
+        flex-direction: row; /* Ensure row direction */
+    }
+
+    .title {
+        justify-content: flex-start; /* Align to the left on small screens */
+        width: auto; /* Adjust width to fit the screen */
+    }
+
+    .menu-container {
+        display: flex;
+        justify-content: flex-end; /* Align to the right on small screens */
+        width: auto; /* Adjust width to fit the screen */
     }
 
     .nav-items {
@@ -331,9 +350,8 @@ span{
     }
 
     .mainslide {
-        grid-template-columns:1fr;
+        grid-template-columns: 1fr;
         margin-left: 20px;
-        
     }
 
     h1 {
@@ -350,8 +368,7 @@ span{
     }
 
     .content {
-        width:300px;
-    
+        width: 300px;
         padding-top: 30px; /* Adjusted padding for smaller screens */
     }
 
@@ -386,7 +403,7 @@ span{
         font-size: 0.9em; /* Adjusted font size for smaller screens */
     }
 
-    span{
+    span {
         text-align: center;
     }
 }

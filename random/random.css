@@ -27,8 +27,8 @@ body {
 }
 
 .title img {
-    width: 100px; /* Smaller width */
-    height: 100px; /* Smaller height */
+    width: 50px; /* Smaller width */
+    height: 50px; /* Smaller height */
     border-radius: 50%;
     margin-right: 10px; /* Space between image and text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -78,12 +78,14 @@ body {
     padding: 10px 20px;
     background-color: #444; /* Slightly lighter background */
     border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
 }
 
 .nav-item:hover {
     background-color: #ffcc00; /* Bright yellow background on hover */
     color: #333; /* Dark text on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.8); /* Glowing effect on hover */
 }
 
 .mainslide {
@@ -119,17 +121,20 @@ body {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    color: #333; /* Dark text */
-    background-color: #ffcc00; /* Bright yellow background */
+    color: black; /* Dark text */
+    background-color: rgb(230, 230, 75); /* Bright yellow background */
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    border: 1px solid black;
 }
 
 .btn:hover {
-    background-color: #333; /* Dark background on hover */
-    color: #ffcc00; /* Bright yellow text on hover */
+    background-color: #f5ed09; /* Dark background on hover */
+    color: black; /* Bright yellow text on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.8); /* Glowing effect on hover */
 }
 
 .telegram {
@@ -193,18 +198,26 @@ body {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
+    .content img {
+        width: 50%; /* Adjust the width as needed */
+        margin-bottom: 10px;
+    }
+
+    .content {
+        margin-bottom: 20px;
+    }
     .nav-items {
         display: flex; /* Show by default on mobile */
-        flex-wrap: wrap; /* Stack menu items vertically */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
         width: 100%; /* Make nav-items take full width */
     }
 
     .nav-item {
-        width: 100%; /* Make each nav-item take full width */
+        flex: 1 1 50%; /* Make each nav-item take 50% width */
         text-align: center; /* Center text */
-    }
-
-    .content img {
-        width: 80%; /* Adjust the width as needed */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
 }
+
+
+

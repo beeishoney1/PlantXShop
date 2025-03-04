@@ -1,4 +1,5 @@
 [[redirecs]]
 from ="/*"
-to = "./../mainpage.html"
-status = 400
+to = "/mainpage.html"
+status = 200
+

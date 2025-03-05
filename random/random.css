@@ -28,7 +28,7 @@ body {
 
 .title img {
     width: 100px; /* Smaller width */
-    height: 100px; /* Smaller height */
+    height: 10    git commit -m "Updated random.html with improved button design and floating effect"0px; /* Smaller height */
     border-radius: 50%;
     margin-right: 10px; /* Space between image and text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -113,16 +113,20 @@ body {
 }
 
 .price {
-    color: #ffcc00; /* Bright yellow text */
+    color: black; /* Bright yellow text */
     font-size: 1.2em;
     font-weight: bold;
+    text-decoration: underline;
 }
-
+.onstock{
+    color: red;
+    font-weight: bold;
+}
 .btn {
     display: inline-block;
     padding: 10px 20px;
     color: black; /* Dark text */
-    background-color: rgb(230, 230, 75); /* Bright yellow background */
+    background-color:rgb(24, 100, 24); /* Bright yellow background */
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
@@ -131,10 +135,11 @@ body {
 }
 
 .btn:hover {
-    background-color: #f5ed09; /* Dark background on hover */
+    background-color: rgb(35, 241, 35); /* Dark background on hover */
     color: black; /* Bright yellow text on hover */
     transform: translateY(-5px); /* Slight lift on hover */
     box-shadow: 0 4px 8px rgba(255, 204, 0, 0.8); /* Glowing effect on hover */
+  
 }
 
 .telegram {

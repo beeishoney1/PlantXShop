@@ -120,22 +120,26 @@ body {
     font-weight: bold;
     text-decoration: underline;
 }
-
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    color: #333; /* Dark text */
-    background-color: #ffcc00; /* Bright yellow background */
+    color: black; /* Dark text */
+    background-color:rgb(24, 100, 24); /* Bright yellow background */
     border-radius: 4px;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    border: 1px solid black;
 }
 
 .btn:hover {
-    background-color: #333; /* Dark background on hover */
-    color: #ffcc00; /* Bright yellow text on hover */
+    background-color: rgb(35, 241, 35); /* Dark background on hover */
+    color: black; /* Bright yellow text on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(255, 204, 0, 0.8); /* Glowing effect on hover */
+  
 }
+
 
 .telegram {
     margin-top: 20px;
